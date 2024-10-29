@@ -6,11 +6,13 @@
 /*   By: abhimi <abhimi@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 15:37:18 by abhimi            #+#    #+#             */
-/*   Updated: 2024/10/21 15:44:06 by abhimi           ###   ########.fr       */
+/*   Updated: 2024/10/29 19:56:08 by abhimi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isdigit(int c)
+#include "libft.h"
+
+int	ft_isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
 		return (1);

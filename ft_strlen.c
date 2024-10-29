@@ -6,16 +6,18 @@
 /*   By: abhimi <abhimi@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 16:46:24 by abhimi            #+#    #+#             */
-/*   Updated: 2024/10/22 16:48:57 by abhimi           ###   ########.fr       */
+/*   Updated: 2024/10/29 20:35:54 by abhimi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <libft.h>
+
+#include "libft.h"
 
 size_t	ft_strlen(const char *s)
 {
-	size_t i;
+	size_t	i;
+
 	i = 0;
-	while(s[i])
+	while (s[i])
 	{
 		i++;
 	}

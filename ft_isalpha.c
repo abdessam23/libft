@@ -6,11 +6,13 @@
 /*   By: abhimi <abhimi@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 15:46:23 by abhimi            #+#    #+#             */
-/*   Updated: 2024/10/21 15:51:50 by abhimi           ###   ########.fr       */
+/*   Updated: 2024/10/29 19:54:23 by abhimi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isalpha(int c)
+#include "libft.h"
+
+int	ft_isalpha(int c)
 {
 	if ((c >= 'a' && c <= 'z') || (c <= 'A' c >= 'Z'))
 		return (1);
