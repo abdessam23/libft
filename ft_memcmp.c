@@ -6,7 +6,7 @@
 /*   By: abhimi <abhimi@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 11:41:42 by abhimi            #+#    #+#             */
-/*   Updated: 2024/10/29 20:49:42 by abhimi           ###   ########.fr       */
+/*   Updated: 2024/10/30 09:12:59 by abhimi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	const unsigned char		*d1;
-	const unsigned char 	*d2;
+	const unsigned char		*d2;
 	size_t					i;
 
 	i = 0;
