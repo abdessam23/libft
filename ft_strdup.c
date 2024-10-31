@@ -6,7 +6,7 @@
 /*   By: abhimi <abhimi@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 14:32:21 by abhimi            #+#    #+#             */
-/*   Updated: 2024/10/25 15:16:16 by abhimi           ###   ########.fr       */
+/*   Updated: 2024/10/31 11:18:48 by abhimi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strdup(const char *s1)
 	char	*p;
 	int		i;
 
-	p = (char *)malloc(sizeof(char) * (strlen(s1) + 1));
+	p = (char *)malloc(sizeof(char) * (ft_strlen(s1) + 1));
 	if (!p)
 		return (NULL);
 	i = 0;

@@ -6,7 +6,7 @@
 /*   By: abhimi <abhimi@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 18:51:41 by abhimi            #+#    #+#             */
-/*   Updated: 2024/10/26 11:12:37 by abhimi           ###   ########.fr       */
+/*   Updated: 2024/10/31 11:22:55 by abhimi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	int		l1;
 	int		l2;
 
-	l1 = strlen(s1);
-	l2 = strlen(s2);
+	l1 = ft_strlen(s1);
+	l2 = ft_strlen(s2);
 	i = 0;
 	j = 0;
 	if (!s1 || !s2)

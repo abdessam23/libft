@@ -6,10 +6,11 @@
 /*   By: abhimi <abhimi@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 10:39:03 by abhimi            #+#    #+#             */
-/*   Updated: 2024/10/29 20:32:09 by abhimi           ###   ########.fr       */
+/*   Updated: 2024/10/31 11:20:38 by abhimi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <libft.h>
+
+#include "libft.h"
 
 void	*ft_memset(void *b, int c, size_t len)
 {

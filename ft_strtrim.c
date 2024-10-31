@@ -6,7 +6,7 @@
 /*   By: abhimi <abhimi@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 11:17:18 by abhimi            #+#    #+#             */
-/*   Updated: 2024/10/27 13:21:23 by abhimi           ###   ########.fr       */
+/*   Updated: 2024/10/31 11:25:46 by abhimi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,6 @@ int	check_chr(const char *s, const char c)
 int	ft_star(const char *s, const char *d)
 {
 	int	i;
-	int	j;
 
 	i = 0;
 	while (s[i] != '\0')

@@ -6,10 +6,11 @@
 /*   By: abhimi <abhimi@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 14:08:27 by abhimi            #+#    #+#             */
-/*   Updated: 2024/10/29 20:45:01 by abhimi           ###   ########.fr       */
+/*   Updated: 2024/10/31 11:19:53 by abhimi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <libft.h>
+
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

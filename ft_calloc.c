@@ -6,7 +6,7 @@
 /*   By: abhimi <abhimi@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 14:13:50 by abhimi            #+#    #+#             */
-/*   Updated: 2024/10/25 14:29:35 by abhimi           ###   ########.fr       */
+/*   Updated: 2024/10/31 11:22:19 by abhimi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	*ft_calloc(size_t count, size_t size)
 {
 	char	*p;
-	int		i;
+	size_t		i;
 
 	i = 0;
 	p = (char *) malloc(count * size);
