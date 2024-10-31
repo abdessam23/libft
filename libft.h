@@ -6,21 +6,21 @@
 /*   By: abhimi <abhimi@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 18:33:09 by abhimi            #+#    #+#             */
-/*   Updated: 2024/10/30 11:13:20 by abhimi           ###   ########.fr       */
+/*   Updated: 2024/10/31 09:18:29 by abhimi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
-#define LIBFT_H
+# define LIBFT_H
 
-typedef struct s_list
-{
-void			*content;
-struct		s_list	*next;
-} t_list
+# include <stdlib.h>
+# include <stddef.h>
+
 int		ft_atoi(const char *str);
-size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t dstsize);
-size_t	ft_strlcpy(char *restrict dst, const char *restrict src, size_t dstsize);
+size_t	ft_strlcat(char *restrict dst,
+			const char *restrict src, size_t dstsize);
+size_t	ft_strlcpy(char *restrict dst,
+			const char *restrict src, size_t dstsize);
 char	*strnstr(const char *haystack, const char *needle, size_t len);
 void	*ft_memmove(void *dst, const void *src, size_t len);
 void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n);
