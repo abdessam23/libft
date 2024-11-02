@@ -1,19 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abhimi <abhimi@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/29 11:47:37 by abhimi            #+#    #+#             */
-/*   Updated: 2024/11/01 10:24:37 by abhimi           ###   ########.fr       */
+/*   Created: 2024/11/01 17:03:07 by abhimi            #+#    #+#             */
+/*   Updated: 2024/11/02 12:05:39 by abhimi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putendl_fd(char *s, int fd)
+t_list	*ft_lstnew(void *content)
 {
-	ft_putstr_fd(s, fd);
-	ft_putchar_fd('\n', fd);
+	t_list	*d;
+
+	d = malloc(sizeof(t_list));
+	if (!node)
+		return (NULL);
+	d->content = content;
+	return (d);
 }

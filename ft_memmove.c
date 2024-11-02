@@ -6,7 +6,7 @@
 /*   By: abhimi <abhimi@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 17:42:08 by abhimi            #+#    #+#             */
-/*   Updated: 2024/10/31 11:14:49 by abhimi           ###   ########.fr       */
+/*   Updated: 2024/11/01 16:10:01 by abhimi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,12 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	unsigned char		*p;
 	const unsigned char	*s;
-	size_t					i;
+	size_t				i;
 
 	i = 0;
+	s = (const unsigned char *) src;
 	p = (unsigned char *) dst;
-	s = (const unsigned char *)src;
-	if (!p && !s)
+	if (!dst && !src)
 		return (NULL);
 	if (p > s)
 	{
@@ -32,10 +32,6 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 		}
 	}
 	else
-		while (i < len)
-		{
-			p[i] = s[i];
-			i++;
-		}
+		ft_memcpy(dst, src, len);
 	return (dst);
 }

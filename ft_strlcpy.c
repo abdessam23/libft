@@ -6,13 +6,13 @@
 /*   By: abhimi <abhimi@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 11:18:14 by abhimi            #+#    #+#             */
-/*   Updated: 2024/10/30 09:43:21 by abhimi           ###   ########.fr       */
+/*   Updated: 2024/11/01 15:25:31 by abhimi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *restrict dst, const char *restrict src, size_t dstsize)
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
 	size_t	i;
 	size_t	sl;

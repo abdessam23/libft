@@ -6,13 +6,13 @@
 /*   By: abhimi <abhimi@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 11:17:18 by abhimi            #+#    #+#             */
-/*   Updated: 2024/10/31 11:25:46 by abhimi           ###   ########.fr       */
+/*   Updated: 2024/11/02 12:41:40 by abhimi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	check_chr(const char *s, const char c)
+static int	check_chr(const char *s, const char c)
 {
 	int	i;
 
@@ -26,7 +26,7 @@ int	check_chr(const char *s, const char c)
 	return (0);
 }
 
-int	ft_star(const char *s, const char *d)
+static int	ft_star(const char *s, const char *d)
 {
 	int	i;
 
@@ -40,7 +40,7 @@ int	ft_star(const char *s, const char *d)
 	return (0);
 }
 
-int	ft_end(const char *s2, const char *f)
+static int	ft_end(const char *s2, const char *f)
 {
 	int	len;
 
@@ -61,6 +61,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 	i = ft_star(s1, set);
 	tl = ft_end(s1, set) - i + 1;
+	if (!s1 && !set)
+		return (ft_strdup(""));
 	t = malloc(sizeof(char) *(tl + 1));
 	if (!t)
 		return (NULL);
