@@ -6,13 +6,13 @@
 /*   By: abhimi <abhimi@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 11:50:18 by abhimi            #+#    #+#             */
-/*   Updated: 2024/10/31 11:17:58 by abhimi           ###   ########.fr       */
+/*   Updated: 2024/11/05 16:46:17 by abhimi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_intmin(unsigned int n, int fd)
+static void	ft_intmin(unsigned int n, int fd)
 {
 	if (n > 9)
 	{

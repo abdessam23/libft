@@ -6,7 +6,7 @@
 /*   By: abhimi <abhimi@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 14:10:17 by abhimi            #+#    #+#             */
-/*   Updated: 2024/11/01 15:25:11 by abhimi           ###   ########.fr       */
+/*   Updated: 2024/11/05 17:18:02 by abhimi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	size_t	sl;
 	size_t	dl;
 
+	if (!dst && dstsize == 0)
+		return (ft_strlen(src));
 	sl = ft_strlen(src);
 	dl = ft_strlen(dst);
 	if (dstsize <= dl)

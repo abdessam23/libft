@@ -6,7 +6,7 @@
 /*   By: abhimi <abhimi@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 09:05:18 by abhimi            #+#    #+#             */
-/*   Updated: 2024/11/01 10:59:20 by abhimi           ###   ########.fr       */
+/*   Updated: 2024/11/04 17:28:58 by abhimi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,5 @@ char	*ft_strrchr(const char *s, int c)
 			return ((char *) s + i);
 		i--;
 	}
-	if (b == '\0')
-		return ((char *) s);
 	return (NULL);
 }

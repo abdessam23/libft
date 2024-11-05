@@ -6,13 +6,24 @@
 /*   By: abhimi <abhimi@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 13:30:13 by abhimi            #+#    #+#             */
-/*   Updated: 2024/10/27 20:17:38 by abhimi           ###   ########.fr       */
+/*   Updated: 2024/11/03 16:08:49 by abhimi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	count_word(char const *str, char c)
+static char	**free_arr(char **arr, int i)
+{
+	while (i > 0)
+	{
+		i--;
+		free (arr[i]);
+	}
+	free (arr);
+	return (NULL);
+}
+
+static int	count_word(char const *str, char c)
 {
 	int	countw;
 
@@ -29,20 +40,7 @@ int	count_word(char const *str, char c)
 	return (countw);
 }
 
-void	ft_fill(char *dst, char const *str, char c)
-{
-	int	i;
-
-	i = 0;
-	while (str[i] && str[i] != c)
-	{
-		dst[i] = str[i];
-		i++;
-	}
-	dst[i] = '\0';
-}
-
-void	ft_allocat(char **tab, char const *str, char c)
+static char	**ft_allocat(char **tab, char const *str, char c)
 {
 	int	i;
 	int	count;
@@ -57,17 +55,17 @@ void	ft_allocat(char **tab, char const *str, char c)
 			count++;
 		if (count > 0)
 		{
-			tab[i] = malloc(sizeof(char) * (count + 1));
-			if (!tab)
-				return ;
-			ft_fill(tab[i], (str + j), c);
+			tab[i] = ft_substr (str, j, count);
+			if (!tab[i])
+				return (free_arr (tab, i));
 			i++;
 			j = j + count;
 		}
 		else
 			j++;
 	}
-	tab[i] = 0;
+	tab[i] = NULL;
+	return (tab);
 }
 
 char	**ft_split(char const *s, char c)
@@ -76,9 +74,8 @@ char	**ft_split(char const *s, char c)
 	size_t	cword;
 
 	cword = count_word(s, c);
-	arr = malloc(sizeof(char **) * (cword + 1));
+	arr = (char **)malloc(sizeof(char *) * (cword + 1));
 	if (!arr)
 		return (NULL);
-	ft_allocat(arr, s, c);
-	return (arr);
+	return (ft_allocat(arr, s, c));
 }

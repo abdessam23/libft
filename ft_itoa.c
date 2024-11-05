@@ -6,13 +6,13 @@
 /*   By: abhimi <abhimi@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 09:20:36 by abhimi            #+#    #+#             */
-/*   Updated: 2024/10/29 11:05:07 by abhimi           ###   ########.fr       */
+/*   Updated: 2024/11/02 20:32:12 by abhimi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_lenum(int n)
+static int	ft_lenum(int n)
 {
 	int	l;
 
