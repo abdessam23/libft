@@ -59,10 +59,10 @@ char	*ft_strtrim(char const *s1, char const *set)
 	char	*t;
 	int		j;
 
+	if (!s1 || !set)
+		return (ft_strdup(""));
 	i = ft_star(s1, set);
 	tl = ft_end(s1, set) - i + 1;
-	if (!s1 && !set)
-		return (ft_strdup(""));
 	t = malloc(sizeof(char) *(tl + 1));
 	if (!t)
 		return (NULL);
