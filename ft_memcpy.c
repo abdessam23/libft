@@ -23,13 +23,10 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	p = (unsigned char *)dst;
 	if (!dst && !src)
 		return (NULL);
-	if (dst != src)
+	while (i < n)
 	{
-		while (i < n)
-		{
-			p[i] = s[i];
-			i++;
-		}
+		p[i] = s[i];
+		i++;
 	}
 	return (dst);
 }

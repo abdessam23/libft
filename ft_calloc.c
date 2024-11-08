@@ -15,16 +15,12 @@
 void	*ft_calloc(size_t count, size_t size)
 {
 	char	*p;
-	size_t	i;
 
-	i = 0;
+	if (count * size > SIZE_MAX)
+		return (NULL);
 	p = (char *) malloc(count * size);
 	if (!p)
 		return (NULL);
-	while (i < count * size)
-	{
-		p[i] = 0;
-		i++;
-	}
+	ft_memset(p, 0, count * size);
 	return ((void *)p);
 }
