@@ -33,9 +33,9 @@ bonus: $(OBJSALL)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(OBJS) $(OBJSALL)
+	rm -f $(OBJSALL)
 fclean: clean
-	rm -f $(NAME) $(bonus)
+	rm -f $(NAME)
 
 re: fclean all
 

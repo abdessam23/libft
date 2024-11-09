@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
 static t_list	*ft_frees(t_list *lst, void (*del)(void *))
 {
