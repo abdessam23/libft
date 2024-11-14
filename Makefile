@@ -24,7 +24,7 @@ CFLAGS = -Wall -Wextra -Werror
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	ar rcs $(NAME) $(OBJS)
+	@ar rcs $(NAME) $(OBJS)
 
 bonus: $(OBJSALL)
 	ar rcs $(NAME) $(OBJSALL)
@@ -33,9 +33,10 @@ bonus: $(OBJSALL)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(OBJSALL)
+	rm -f $(OBJS) $(OBJSALL)
 fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
 
+.PHONY: all clean 

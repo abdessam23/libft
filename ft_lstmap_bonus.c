@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 static t_list	*ft_frees(t_list *lst, void (*del)(void *))
 {
@@ -25,7 +24,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*nl;
 	void	*tr;
 
-	if (!lst)
+	if (!lst || !f || !del)
 		return (NULL);
 	l = NULL;
 	while (lst)

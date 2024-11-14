@@ -11,6 +11,8 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <string.h>
+#include <stdio.h>
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
@@ -21,6 +23,10 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	i = 0;
 	s = (unsigned char *)src;
 	p = (unsigned char *)dst;
+	if (dst == src)
+	{
+		return (dst);
+	}
 	if (!dst && !src)
 		return (NULL);
 	while (i < n)

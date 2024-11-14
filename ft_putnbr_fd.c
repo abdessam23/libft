@@ -15,12 +15,8 @@
 static void	ft_intmin(unsigned int n, int fd)
 {
 	if (n > 9)
-	{
 		ft_intmin(n / 10, fd);
-		ft_intmin(n % 10, fd);
-	}
-	else
-		ft_putchar_fd(n + '0', fd);
+	ft_putchar_fd(n % 10 + '0', fd);
 }
 
 void	ft_putnbr_fd(int n, int fd)
